@@ -1,0 +1,11 @@
+:root {
+    --fs-body: 16px;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
