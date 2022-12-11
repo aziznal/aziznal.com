@@ -1,0 +1,109 @@
+/* ### Flex Styles */
+.d-flex {
+    display: flex;
+}
+.fx-row {
+    flex-direction: row;
+}
+.fx-column {
+    flex-direction: column;
+}
+.fx-cross-axis-start {
+    align-items: start;
+}
+.fx-main-axis-start {
+    justify-content: start;
+}
+.fx-cross-axis-center {
+    align-items: center;
+}
+.fx-main-axis-center {
+    justify-content: center;
+}
+.fx-cross-axis-end {
+    align-items: end;
+}
+.fx-main-axis-end {
+    justify-content: end;
+}
+.fx-cross-axis-space-between {
+    align-items: space-between;
+}
+.fx-main-axis-space-between {
+    justify-content: space-between;
+}
+.fx-cross-axis-space-evenly {
+    align-items: space-evenly;
+}
+.fx-main-axis-space-evenly {
+    justify-content: space-evenly;
+}
+.fx-cross-axis-space-around {
+    align-items: space-around;
+}
+.fx-main-axis-space-around {
+    justify-content: space-around;
+}
+.fx-flex {
+    width: 100%;
+}
+.fx-fill {
+    width: 100%;
+    height: 100%;
+}
+
+/* ### Margins & Paddings */
+@for $size from 1 through 12 {
+    $multiplier: 4px;
+
+    .p-#{$size} {
+        padding: $size * $multiplier;
+    }
+    .px-#{$size} {
+        padding-left: $size * $multiplier;
+        padding-right: $size * $multiplier;
+    }
+    .py-#{$size} {
+        padding-top: $size * $multiplier;
+        padding-bottom: $size * $multiplier;
+    }
+    .pt-#{$size} {
+        padding-top: $size * $multiplier;
+    }
+    .pl-#{$size} {
+        padding-left: $size * $multiplier;
+    }
+    .pb-#{$size} {
+        padding-bottom: $size * $multiplier;
+    }
+    .pr-#{$size} {
+        padding-right: $size * $multiplier;
+    }
+
+    .m-#{$size} {
+        margin: $size * $multiplier;
+    }
+    .mx-#{$size} {
+        margin-left: $size * $multiplier;
+        margin-right: $size * $multiplier;
+    }
+    .my-#{$size} {
+        margin-top: $size * $multiplier;
+        margin-bottom: $size * $multiplier;
+    }
+    .mt-#{$size} {
+        margin-top: $size * $multiplier;
+    }
+    .mr-#{$size} {
+        margin-right: $size * $multiplier;
+    }
+    .mb-#{$size} {
+        margin-bottom: $size * $multiplier;
+    }
+    .ml-#{$size} {
+        margin-left: $size * $multiplier;
+    }
+    .fx-gap-#{$size} {
+        gap: $size * $multiplier;
+    }
+}

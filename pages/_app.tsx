@@ -1,0 +1,13 @@
+// Makes styles accessible to all pages
+import "../styles/styles.scss";
+import "./layout.scss";
+
+import type { AppProps } from "next/app";
+
+export default function App({ Component, pageProps }: AppProps) {
+    return (
+        <>
+            <Component {...pageProps} />
+        </>
+    );
+}
