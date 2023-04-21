@@ -7,22 +7,22 @@ It also defines utility classes for text and background colors.
 */
 
 :root {
-    --clr-primary-300: hsl(213, 78%, 55%);
+    --clr-primary-300: hsl(213, 78%, 60%);
     --clr-primary-400: hsl(213, 78%, 50%);
-    --clr-primary-500: hsl(213, 78%, 45%);
+    --clr-primary-500: hsl(213, 78%, 40%);
 
-    --clr-secondary-300: hsl(49, 100%, 60%);
+    --clr-secondary-300: hsl(49, 100%, 65%);
     --clr-secondary-400: hsl(49, 100%, 55%);
-    --clr-secondary-500: hsl(49, 100%, 50%);
+    --clr-secondary-500: hsl(49, 100%, 45%);
 
-    --clr-warn-400: hsl(0, 67%, 50%);
+    --clr-warn-400: hsl(0, 67%, 55%);
     --clr-warn-400: hsl(0, 67%, 45%);
-    --clr-warn-400: hsl(0, 67%, 40%);
+    --clr-warn-400: hsl(0, 67%, 35%);
 
-    --clr-white-100: hsl(0, 0%, 95%);
+    --clr-white-100: hsl(0, 0%, 100%);
     --clr-white-200: hsl(0, 0%, 90%);
 
-    --clr-black-800: hsl(0, 0%, 10%);
+    --clr-black-800: hsl(0, 0%, 15%);
     --clr-black-900: hsl(0, 0%, 5%);
 
     --clr-gradient-primary: linear-gradient(
@@ -30,11 +30,16 @@ It also defines utility classes for text and background colors.
         black -5.4%,
         var(--clr-primary-500) 77.78%
     );
+
+    --clr-gradient-primary-hover: linear-gradient(
+        90deg,
+        black -5.4%,
+        var(--clr-primary-400) 77.78%
+    );
 }
 
 body {
     color: var(--clr-black-900);
-    background-color: var(--clr-white-100);
 }
 
 // Utility classes

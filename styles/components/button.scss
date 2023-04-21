@@ -1,0 +1,104 @@
+// Base Button with common styles
+[data-button] {
+    // below are all defaults, declared here for correct scoping
+    --local-button-color: var(--clr-primary-400);
+    --local-button-color-hover: var(--clr-primary-500);
+    --local-button-text-color: var(--clr-white-100);
+    --local-button-border-size: 3px;
+
+    font-weight: var(--fw-bold);
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    &:focus-visible {
+        outline: 4px solid var(--clr-primary-300);
+        outline-offset: 3px;
+    }
+}
+
+// Size variants
+[data-button] {
+    &[data-small] {
+        padding: 8px 16px;
+        font-size: 16px;
+
+        --local-button-border-size: 2px;
+    }
+
+    &[data-large] {
+        padding: 14px 40px;
+        font-size: 21px;
+
+        --local-button-border-size: 4px;
+    }
+}
+
+// Color variants
+[data-button] {
+    &[data-primary] {
+        --local-button-color: var(--clr-primary-400);
+        --local-button-color-hover: var(--clr-primary-500);
+        --local-button-text-color: var(--clr-white-100);
+    }
+
+    &[data-primary-gradient] {
+        --local-button-color: var(--clr-gradient-primary);
+        --local-button-color-hover: var(--clr-gradient-primary);
+        --local-button-text-color: var(--clr-white-100);
+    }
+
+    &[data-secondary] {
+        --local-button-color: var(--clr-secondary-400);
+        --local-button-color-hover: var(--clr-secondary-500);
+        --local-button-text-color: var(--clr-white-100);
+    }
+
+    &[data-warn] {
+        --local-button-color: var(--clr-warn-400);
+        --local-button-color-hover: var(--clr-warn-500);
+        --local-button-text-color: var(--clr-white-100);
+    }
+
+    &[data-white] {
+        --local-button-color: var(--clr-white-100);
+        --local-button-color-hover: var(--clr-white-200);
+        --local-button-text-color: var(--clr-black-900);
+    }
+
+    &[data-black] {
+        --local-button-color: var(--clr-black-900);
+        --local-button-color-hover: var(--clr-black-800);
+        --local-button-text-color: var(--clr-white-100);
+    }
+}
+
+// Style variants
+[data-button] {
+    // filled-rounded is default
+    border: none;
+    border-radius: 100vw;
+
+    background: var(--local-button-color);
+    color: var(--clr-white-100);
+
+    transition: background 0.2s ease-in-out;
+
+    &:hover {
+        background: var(--local-button-color-hover);
+        opacity: 0.9;
+    }
+
+    &[data-outlined] {
+        background: transparent;
+
+        border: var(--local-button-border-size) solid var(--local-button-color);
+
+        color: var(--local-button-color);
+
+        &:hover {
+            background: var(--local-button-color);
+            color: var(--local-button-text-color);
+        }
+    }
+}
