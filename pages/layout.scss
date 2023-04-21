@@ -4,5 +4,13 @@ body,
 body > div:first-child,
 div#__next,
 div#__next > div {
-    min-height: 100dvh;
+    box-sizing: border-box;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    width: 800px;
 }

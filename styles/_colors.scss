@@ -24,6 +24,12 @@ It also defines utility classes for text and background colors.
 
     --clr-black-800: hsl(0, 0%, 10%);
     --clr-black-900: hsl(0, 0%, 5%);
+
+    --clr-gradient-primary: linear-gradient(
+        90deg,
+        black -5.4%,
+        var(--clr-primary-500) 77.78%
+    );
 }
 
 body {

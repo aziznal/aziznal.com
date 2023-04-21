@@ -1,0 +1,89 @@
+$topMargin: 140px;
+$barWidth: 36px;
+
+.image-section {
+    position: relative;
+
+    width: 510px;
+    height: 540px;
+
+    margin-top: $topMargin;
+
+    isolation: isolate;
+}
+
+.box-1 {
+    position: absolute;
+
+    inset: 0 0 auto auto;
+
+    width: 360px;
+    height: 325px;
+
+    background: var(--clr-gradient-primary);
+
+    z-index: 2;
+}
+
+.box-2 {
+    position: absolute;
+
+    inset: 0 auto auto 0;
+
+    width: $barWidth;
+    height: 400px;
+
+    background-color: var(--clr-black-900);
+
+    z-index: 1;
+}
+
+.box-3 {
+    position: absolute;
+
+    inset: 0 auto auto 0;
+
+    width: 100%;
+    height: $barWidth;
+
+    background-color: var(--clr-black-900);
+
+    z-index: 1;
+}
+
+.box-4 {
+    position: absolute;
+
+    inset: 0 0 auto auto;
+
+    width: $barWidth;
+    height: calc(500px + #{$barWidth});
+
+    background-color: var(--clr-primary-500);
+
+    z-index: 1;
+}
+
+.box-5 {
+    position: absolute;
+
+    inset: 500px 0 0 auto;
+
+    width: 88%;
+    height: $barWidth;
+
+    background-color: var(--clr-primary-500);
+
+    z-index: 1;
+}
+
+.image {
+    position: absolute;
+
+    margin: -$topMargin auto auto 28px;
+
+    width: 400px;
+    height: 640px;
+
+    z-index: 3;
+}
