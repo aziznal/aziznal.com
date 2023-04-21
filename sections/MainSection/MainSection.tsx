@@ -2,24 +2,25 @@ import styles from "./MainSection.module.scss";
 
 export function MainSection() {
     return (
-        <section
-            className="d-flex fx-row fx-main-axis-space-between"
-            styles={{
-                width: "100%",
-            }}
-        >
-            <div>
+        <section className={styles["main-section-container"]}>
+            <div className={styles["title-section"]}>
                 <h1>{`Hello, I'm Aziz`}</h1>
 
-                <h2>{`I'm a frontend developer`}</h2>
+                <h2 className="mt-2">{`I'm a frontend developer`}</h2>
 
-                <p>
+                <p className="mt-4">
                     {`Whether it's a basic landing page, or a full-blown web application, I can help you build it.`}
                 </p>
 
-                <button>Contact Me</button>
+                <div className="d-flex fx-row fx-gap-4 mt-12">
+                    <button data-button data-large data-primary-gradient>
+                        Contact Me
+                    </button>
 
-                <button>About me</button>
+                    <button data-button data-large data-black data-outlined>
+                        About me
+                    </button>
+                </div>
             </div>
 
             <div className={styles["image-section"]}>
@@ -40,6 +41,8 @@ export function MainSection() {
                     className={styles["image"]}
                 />
             </div>
+
+            <div>Linkedin</div>
         </section>
     );
 }
