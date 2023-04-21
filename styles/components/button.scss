@@ -82,7 +82,7 @@
     background: var(--local-button-color);
     color: var(--clr-white-100);
 
-    transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out, opacity 0.2s ease-in-out;
 
     &:hover {
         background: var(--local-button-color-hover);
