@@ -3,19 +3,22 @@ import "../styles/styles.scss";
 import "./layout.scss";
 
 import type { AppProps } from "next/app";
-
-import { Footer, Header } from "@components";
+import Layout from "./layout";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
+    const router = useRouter();
+
+    useEffect(() => {
+        if (router.route.length > 1) return;
+
+        router.push('/main')
+    }, [])
+
     return (
-        <div className="layout-container">
-            <Header />
-
-            <main>
-                <Component {...pageProps} />
-            </main>
-
-            <Footer />
-        </div>
+        <Layout>
+            <Component {...pageProps} />
+        </Layout>
     );
 }
