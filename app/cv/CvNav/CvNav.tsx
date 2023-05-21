@@ -26,13 +26,15 @@ export default function CvNav() {
 
             <span className={`${styles["nav-link"]}`}>EXPERIENCE</span>
 
-            <span className={`${styles["nav-link"]}`}>EDUCATION</span>
-
             <span className={`${styles["nav-link"]}`}>SKILLS</span>
 
-            <span className={`${styles["nav-link"]}`}>INTERESTS</span>
+            <span className={`${styles["nav-link"]}`}>EDUCATION</span>
 
-            <span className={`${styles["nav-link"]}`}>AWARDS</span>
+            <span className={`${styles["nav-link"]}`}>ARTICLES</span>
+
+            <span className={`${styles["nav-link"]}`}>LANGUAGES</span>
+
+            <span className={`${styles["nav-link"]}`}>INTERESTS</span>
         </div>
     );
 }
