@@ -10,7 +10,6 @@ export default function Page() {
             <h1
                 style={{
                     fontSize: "56px",
-                    fontFamily: "Ubuntu",
                 }}
             >
                 SKILLS
