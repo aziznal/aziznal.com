@@ -18,7 +18,9 @@ export default function CvNav() {
                 alt="My profile image"
             ></img>
 
-            <ActiveLink href="/cv/about">ABOUT</ActiveLink>
+            <ActiveLink href="/cv/about" className="mt-4">
+                ABOUT
+            </ActiveLink>
 
             <ActiveLink href="/cv/experience">EXPERIENCE</ActiveLink>
 
