@@ -1,4 +1,10 @@
-export default function About() {
+import styles from "./page.module.scss";
+
+const Skill = ({ skillName }: { skillName: string }) => {
+    return <span className={`${styles["skill"]}`}>{skillName}</span>;
+};
+
+export default function Page() {
     return (
         <>
             <h1
@@ -10,21 +16,47 @@ export default function About() {
                 SKILLS
             </h1>
 
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
-                enim impedit animi natus, tempora, officia doloremque esse
-                voluptas eum fugit repudiandae. Itaque, consequuntur laboriosam,
-                aliquam hic ea fuga velit totam consequatur, earum harum culpa
-                tenetur? At, reiciendis sit quod quae porro odio, magnam commodi
-                esse libero similique vitae ratione aliquid alias. Maiores ut,
-                voluptatibus aut officiis excepturi nemo. Cumque veniam ex
-                libero sunt, ratione placeat sapiente. Voluptate ex,
-                perspiciatis blanditiis sint reiciendis corrupti provident
-                beatae velit, illum pariatur quibusdam maiores voluptatibus
-                alias, illo doloribus sapiente molestias repellendus maxime
-                aliquam accusamus dignissimos saepe nobis. Eius voluptate
-                aliquam modi, iste commodi earum?
-            </p>
+            <div
+                style={{
+                    marginTop: "80px",
+                }}
+            ></div>
+
+            <section>
+                <h4 className="mb-4 faded">Technical Skills</h4>
+
+                <div className="d-flex fx-gap-3 fx-wrap">
+                    <Skill skillName="Angular" />
+                    <Skill skillName="React" />
+                    <Skill skillName="Typescript" />
+                    <Skill skillName="HTML" />
+                    <Skill skillName="CSS" />
+                    <Skill skillName="Responsive" />
+                    <Skill skillName="Design" />
+                    <Skill skillName="Figma" />
+                    <Skill skillName="Git" />
+                    <Skill skillName="Jest" />
+                    <Skill skillName="Cypress" />
+                    <Skill skillName="Javascript" />
+                    <Skill skillName="Linux" />
+                    <Skill skillName="SCSS" />
+                    <Skill skillName="Python" />
+                    <Skill skillName="Docker" />
+                    <Skill skillName="Vim" />
+                    <Skill skillName="Extensive Task Analysis" />
+                </div>
+            </section>
+
+            <section className="mt-12">
+                <h4 className="mb-4 faded">Soft Skills</h4>
+
+                <div className="d-flex fx-gap-3 fx-wrap">
+                    <Skill skillName="Team Management" />
+                    <Skill skillName="Adaptability to Change" />
+                    <Skill skillName="Solution-Oriented" />
+                    <Skill skillName="Resourceful" />
+                </div>
+            </section>
         </>
     );
 }

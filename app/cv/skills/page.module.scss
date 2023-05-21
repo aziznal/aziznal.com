@@ -1,0 +1,16 @@
+.skill {
+    background-color: #fcd9cc;
+
+    border-radius: 500px;
+
+    padding-block: 6px;
+    padding-inline: 10px;
+
+    height: fit-content;
+
+    cursor: default;
+
+    &:hover {
+        background-color: #fff1ec;
+    }
+}
