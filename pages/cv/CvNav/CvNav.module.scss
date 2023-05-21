@@ -1,0 +1,18 @@
+.nav-link {
+    color: #cf896f;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    &.highlighted {
+        color: white;
+
+        cursor: default;
+    }
+
+    &:hover {
+        color: white;
+    }
+}
