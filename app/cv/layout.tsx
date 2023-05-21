@@ -27,7 +27,7 @@ export default function CvPage({ children }: { children: React.ReactNode }) {
                 style={{
                     flex: "1",
                     paddingInline: "80px",
-                    paddingTop: "120px",
+                    paddingBlock: "120px",
                     fontFamily: "Ubuntu",
                 }}
             >

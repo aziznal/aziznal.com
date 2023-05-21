@@ -1,0 +1,47 @@
+.experience-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 64px;
+
+    padding-left: 36px;
+
+    position: relative;
+
+    &::before {
+        position: absolute;
+        inset: 0;
+
+        display: block;
+        content: "";
+
+        width: 0px;
+        height: 100%;
+
+        border: 1px solid #ee9370;
+    }
+}
+
+.experience-details-list {
+    margin-left: 28px;
+
+    list-style: disc;
+
+    font-size: 16px;
+
+    color: gray;
+
+    li {
+        margin-top: 12px;
+    }
+}
+
+.experience-heading {
+    display: flex;
+
+    gap: 8px;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+}
