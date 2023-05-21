@@ -1,12 +1,6 @@
-"use client";
-
-import Link from "next/link";
-import { useRouter } from "next/router";
-import styles from "./CvNav.module.scss";
+import ActiveLink from "./ActiveLink";
 
 export default function CvNav() {
-    const router = useRouter();
-
     return (
         <div
             className="d-flex fx-column fx-gap-6 fx-cross-axis-center fx-main-axis-center fx-fill"
@@ -24,38 +18,19 @@ export default function CvNav() {
                 alt="My profile image"
             ></img>
 
-            <Link
-                href="cv/about"
-                className={`${styles["nav-link"]} mt-4 ${
-                    router.asPath === "cv/about" ? "active" : null
-                }`}
-            >
-                ABOUT
-            </Link>
+            <ActiveLink href="/cv/about">ABOUT</ActiveLink>
 
-            <Link href="cv/experience" className={`${styles["nav-link"]}`}>
-                EXPERIENCE
-            </Link>
+            <ActiveLink href="/cv/experience">EXPERIENCE</ActiveLink>
 
-            <Link href="cv/skills" className={`${styles["nav-link"]}`}>
-                SKILLS
-            </Link>
+            <ActiveLink href="/cv/skills">SKILLS</ActiveLink>
 
-            <Link href="cv/education" className={`${styles["nav-link"]}`}>
-                EDUCATION
-            </Link>
+            <ActiveLink href="/cv/education">EDUCATION</ActiveLink>
 
-            <Link href="cv/articles" className={`${styles["nav-link"]}`}>
-                ARTICLES
-            </Link>
+            <ActiveLink href="/cv/articles">ARTICLES</ActiveLink>
 
-            <Link href="cv/languages" className={`${styles["nav-link"]}`}>
-                LANGUAGES
-            </Link>
+            <ActiveLink href="/cv/languages">LANGUAGES</ActiveLink>
 
-            <Link href="cv/interests" className={`${styles["nav-link"]}`}>
-                INTERESTS
-            </Link>
+            <ActiveLink href="/cv/interests">INTERESTS</ActiveLink>
         </div>
     );
 }

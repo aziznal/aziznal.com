@@ -8,6 +8,8 @@
 
     cursor: pointer;
 
+    transition: 150ms color;
+
     &.highlighted {
         color: white;
 
