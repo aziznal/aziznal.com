@@ -1,16 +1,15 @@
 // Makes styles accessible to all pages
+import { PropsWithChildren } from "react";
 import "../styles/styles.scss";
 
-import type { AppProps } from "next/app";
-
-export default function App({ Component, pageProps }: AppProps) {
+export default function RootLayout({ children }: PropsWithChildren) {
     return (
         <div
             style={{
                 minHeight: "100vh",
             }}
         >
-            <Component {...pageProps} />
+            {children}
         </div>
     );
 }
