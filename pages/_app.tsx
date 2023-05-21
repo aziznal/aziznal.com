@@ -3,12 +3,14 @@ import "../styles/styles.scss";
 
 import type { AppProps } from "next/app";
 
-import Layout from "./layout";
-
 export default function App({ Component, pageProps }: AppProps) {
     return (
-        <Layout>
+        <div
+            style={{
+                minHeight: "100vh",
+            }}
+        >
             <Component {...pageProps} />
-        </Layout>
+        </div>
     );
 }
