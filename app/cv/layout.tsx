@@ -8,11 +8,31 @@ export default function CvPage({ children }: { children: React.ReactNode }) {
             style={{
                 display: "flex",
                 minHeight: "100vh",
+
+                position: "relative",
             }}
         >
-            <CvNav></CvNav>
+            <div
+                style={{
+                    position: "sticky",
+                    top: "0",
+                    height: "100vh",
+                    flexBasis: "400px",
+                }}
+            >
+                <CvNav></CvNav>
+            </div>
 
-            <>{children}</>
+            <div
+                style={{
+                    flex: "1",
+                    paddingInline: "80px",
+                    paddingTop: "120px",
+                    fontFamily: "Ubuntu",
+                }}
+            >
+                {children}
+            </div>
         </div>
     );
 }

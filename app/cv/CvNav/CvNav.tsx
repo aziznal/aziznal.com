@@ -3,10 +3,9 @@ import styles from "./CvNav.module.scss";
 export default function CvNav() {
     return (
         <div
-            className="d-flex fx-column fx-gap-8 fx-cross-axis-center fx-main-axis-center"
+            className="d-flex fx-column fx-gap-6 fx-cross-axis-center fx-main-axis-center fx-fill"
             style={{
                 backgroundColor: "#BD5D38",
-                width: "400px",
             }}
         >
             <img
