@@ -28,7 +28,8 @@
     cursor: pointer;
 
     &[data-active],
-    &:hover {
+    &:hover
+    {
         color: var(--clr-primary-400);
         font-weight: bold;
 

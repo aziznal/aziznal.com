@@ -1,16 +1,21 @@
+import Link from "next/link";
 import styles from "./Header.module.scss";
 
 export function Header() {
     return (
         <header className={styles["header"]}>
             <div className={styles["link-container"]}>
-                <span className={styles["link"]} data-active>
+                <Link href='/main' className={styles["link"]} data-active>
                     Home
-                </span>
-                <span className={styles["link"]}>About</span>
-                <span className={styles["link"]}>Projects</span>
-                <span className={styles["link"]}>Articles</span>
-                <span className={styles["link"]}>Contact Me</span>
+                </Link>
+
+                <Link href='/about' className={styles["link"]}>About</Link>
+
+                <Link href='/projects' className={styles["link"]}>Projects</Link>
+
+                <Link href='/articles' className={styles["link"]}>Articles</Link>
+
+                <Link href='/contact-me' className={styles["link"]}>Contact Me</Link>
             </div>
 
             <div className={styles["link-container"]}>

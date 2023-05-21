@@ -3,4 +3,20 @@
 @use "_utils.scss";
 @use "_colors.scss";
 
+
 @use "./components/button.scss";
+
+// Makes the page fill the entire viewport height
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+    box-sizing: border-box;
+}
+
+
+.link, .link:active, .link:focus, .link:visited, .link:link {
+    text-decoration: none;
+}
+

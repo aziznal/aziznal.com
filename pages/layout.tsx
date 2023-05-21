@@ -1,9 +1,11 @@
 import { Footer, Header } from "@components";
-import type { PropsWithChildren } from "react";
+import { PropsWithChildren } from "react";
+
+import styles from './layout.module.scss';
 
 export default function Layout(props: PropsWithChildren) {
     return (
-        <div className="layout-container">
+        <div className={styles["layout-container"]}>
             <Header />
                 {props.children}
             <Footer />
