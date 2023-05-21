@@ -1,2 +1,1 @@
-export * from "./Header/Header";
-export * from "./Footer/Footer";
+// Add components here when you make some
