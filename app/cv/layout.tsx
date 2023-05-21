@@ -1,8 +1,7 @@
-import { PropsWithChildren } from "react";
 import CvNav from "./CvNav/CvNav";
 
-export default function CvPage({ children }: PropsWithChildren) {
-    // TOOD: add default re-route to main section
+export default function CvPage({ children }: { children: React.ReactNode }) {
+    // TODO: add default re-route to main section
 
     return (
         <div
